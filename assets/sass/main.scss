@@ -1,0 +1,19 @@
+/* Import des utilitaires */
+
+@import './utils/variables.scss';
+@import './utils/placeholders.scss';
+@import './utils/mixins.scss';
+@import './utils/keyframes.scss';
+@import './utils/police.scss';
+
+/* Import des components */
+
+@import './components/btn.scss';
+@import './components/listul.scss';
+@import './components/title.scss';
+@import './components/heart.scss';
+/* Import des layouts */
+
+@import './layout/header.scss';
+@import './layout/main.scss';
+@import './layout/footer.scss';

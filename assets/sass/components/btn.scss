@@ -1,0 +1,80 @@
+.sectionsearch {
+
+    & button {
+        border: 5px;
+        border-radius: 50px;
+        padding: 25px 40px 25px 40px;
+        @extend %linear-gradiant;
+        @extend %box-shadow;
+        margin-top: 25px;
+    }
+}
+
+.sectionsearch {
+    & button:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    }
+}
+
+.fonctionnement {
+    & button {
+        border: 5px;
+        border-radius: 25px;
+        padding: 25px;
+        @extend %box-shadow;
+        margin-top: 25px;
+        @extend %width;
+        background-color: $gris-clair;
+    }
+}
+
+.fonctionnement {
+    & button:hover {
+        & i {
+            transform: scale(1.10);
+        }
+
+        & .fa-solid {
+            font-size: 25px;
+            color: $violet-primaire;
+        }
+
+        & span {
+            font-size: 17px;
+        }
+    }
+}
+
+.main_restaurants {
+
+    & button {
+        border: 5px;
+        border-radius: 50px;
+        padding: 25px 60px 25px 60px;
+        @extend %linear-gradiant;
+        @extend %box-shadow;
+        width: 65%;
+        display: block;
+        margin: 50px auto;
+    }
+
+    @media (min-width: $layout-breakpoint-tab) {
+        & button {
+            width: 35%;
+        }
+    }
+
+    @media (min-width: $layout-breakpoint-desk) {
+        & button {
+            width: 25%;
+        }
+    }
+}
+
+.main_restaurants:hover {
+    & button:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    }
+}

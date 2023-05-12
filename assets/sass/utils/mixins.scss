@@ -1,0 +1,9 @@
+@mixin grid-template($valeur) {
+
+    grid-template-columns: repeat($valeur, 1fr);
+
+}
+
+@mixin weight($valeur) {
+    font-weight: $valeur;
+}

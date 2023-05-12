@@ -1,0 +1,113 @@
+.restaurants {
+    & ul {
+        @media (min-width: $layout-breakpoint-tab) {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+        @media (min-width: $layout-breakpoint-desk) {
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 45px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        & li {
+            @media (min-width: $layout-breakpoint-tab) {
+                height: 29em;
+            }
+
+            @media (min-width: $layout-breakpoint-desk) {
+                height: 25em;
+            }
+
+            border-radius: 20px;
+            width: 90%;
+            height: 18em;
+            background-color: $txt-fond-sombre;
+            position: relative;
+        }
+    }
+}
+
+
+
+.fonctionnement {
+    & ol {
+        @media (min-width: $layout-breakpoint-tab) {
+            @include grid-template(1);
+            padding-left: 2.5em;
+            padding-right: 2.5em;
+        }
+
+        @media (min-width: $layout-breakpoint-desk) {
+            @include grid-template(3);
+            padding-left: 5em;
+            padding-right: 5em;
+        }
+
+        display: grid;
+        @extend %centergrid;
+        @include grid-template(1);
+        margin-left: 50px;
+        gap: 25px;
+        margin-top: 10px;
+
+        & li {
+            width: 95%;
+            position: relative;
+        }
+    }
+
+}
+
+.main_restaurants {
+
+    & ul {
+        @media (min-width: $layout-breakpoint-tab) {
+            padding-right: 4em;
+            padding-left: 4em;
+        }
+
+        @media (min-width: $layout-breakpoint-desk) {
+            padding-right: 12em;
+            padding-left: 12em;
+        }
+
+        display: grid;
+        @extend %centergrid;
+        @include grid-template(1);
+        @extend %width;
+        gap: 25px;
+
+
+        & li {
+
+            border: 5px;
+            border-radius: 25px;
+            padding: 20px;
+            @extend %box-shadow;
+            @extend %width;
+            position: relative;
+            background-color: $txt-fond-sombre;
+        }
+
+        & .liste {
+            animation: appear 1000ms forwards;
+            opacity: 0;
+
+            @for $i from 1 to 10 {
+                &--#{$i} {
+                    animation-delay: 200ms*$i;
+                }
+            }
+        }
+
+    }
+}

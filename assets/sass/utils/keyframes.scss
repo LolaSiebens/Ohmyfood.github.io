@@ -1,0 +1,41 @@
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: translateX(-2em);
+    }
+
+    100% {
+        transform: translateX(0em);
+        opacity: 1;
+    }
+}
+
+@keyframes textwidth {
+    0% {
+        width: 300px;
+    }
+
+    100% {
+        width: 200px;
+    }
+}
+
+@keyframes textwidthout {
+    0% {
+        width: 200px;
+    }
+
+    100% {
+        width: 300px;
+    }
+}
