@@ -7,6 +7,8 @@
         @extend %linear-gradiant;
         @extend %box-shadow;
         margin-top: 25px;
+        color: white;
+        font-size: 17px;
     }
 }
 
@@ -30,7 +32,13 @@
 }
 
 .fonctionnement {
+    & button {
+        font-size: 17px;
+    }
+
     & button:hover {
+        font-size: 18px;
+
         & i {
             transform: scale(1.10);
         }
@@ -38,10 +46,6 @@
         & .fa-solid {
             font-size: 25px;
             color: $violet-primaire;
-        }
-
-        & span {
-            font-size: 17px;
         }
     }
 }

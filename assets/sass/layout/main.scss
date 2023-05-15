@@ -82,7 +82,7 @@ main {
         & ol {
             & li {
                 & button {
-                    & p {
+                    & span {
                         font-size: 14px;
                         position: absolute;
                         left: -19px;
@@ -97,6 +97,7 @@ main {
                     & .fa-solid {
                         font-size: 25px;
                         color: $icone-gris;
+                        margin-right: 15px;
                     }
 
                     & a {
@@ -210,10 +211,8 @@ main {
         }
 
         & button {
-            & a {
-                font-size: 16px;
-                color: $txt-fond-sombre;
-            }
+            font-size: 16px;
+            color: $txt-fond-sombre;
         }
 
         & .main_restaurants__img {
