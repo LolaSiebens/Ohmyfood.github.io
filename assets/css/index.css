@@ -1,21 +1,37 @@
 /* Import des utilitaires */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
-main .main_restaurants, main .restaurants, main .fonctionnement, header, .main_restaurants ul, .fonctionnement ol {
+
+main .main_restaurants,
+main .restaurants,
+main .fonctionnement,
+header,
+.main_restaurants ul,
+.fonctionnement ol {
   display: grid;
   align-items: center;
   justify-content: center;
 }
 
-main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, main .sectionsearch form, body, .main_restaurants ul li, .main_restaurants ul, .fonctionnement button {
+main .main_restaurants .main_restaurants__img,
+main .restaurants ul li a img,
+main .sectionsearch form,
+body,
+.main_restaurants ul li,
+.main_restaurants ul,
+.fonctionnement button {
   width: 100%;
 }
 
-.main_restaurants button, .sectionsearch button {
+.main_restaurants button,
+.sectionsearch button {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
-.main_restaurants ul li, .main_restaurants button, .fonctionnement button, .sectionsearch button {
+.main_restaurants ul li,
+.main_restaurants button,
+.fonctionnement button,
+.sectionsearch button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -23,36 +39,44 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     visibility: hidden;
   }
 }
+
 @keyframes appear {
   0% {
     transform: translateX(-2em);
   }
+
   100% {
     transform: translateX(0em);
     opacity: 1;
   }
 }
+
 @keyframes textwidth {
   0% {
     width: 300px;
   }
+
   100% {
     width: 200px;
   }
 }
+
 @keyframes textwidthout {
   0% {
     width: 200px;
   }
+
   100% {
     width: 300px;
   }
 }
+
 /* Import des components */
 .sectionsearch button {
   border: 5px;
@@ -81,12 +105,15 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   text-decoration: none;
   color: black;
 }
+
 .fonctionnement button:hover {
   font-size: 18px;
 }
+
 .fonctionnement button:hover i {
   transform: scale(1.1);
 }
+
 .fonctionnement button:hover .fa-solid {
   font-size: 25px;
   color: #9356DC;
@@ -100,11 +127,13 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   display: block;
   margin: 50px auto;
 }
+
 @media (min-width: 768px) {
   .main_restaurants button {
     width: 35%;
   }
 }
+
 @media (min-width: 1024px) {
   .main_restaurants button {
     width: 25%;
@@ -125,18 +154,21 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   flex-direction: column;
   align-items: center;
 }
+
 @media (min-width: 768px) {
   .restaurants ul {
     padding-left: 2em;
     padding-right: 2em;
   }
 }
+
 @media (min-width: 1024px) {
   .restaurants ul {
     padding-left: 5em;
     padding-right: 5em;
   }
 }
+
 .restaurants ul li {
   border-radius: 20px;
   width: 90%;
@@ -144,11 +176,13 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   background-color: #ffffff;
   position: relative;
 }
+
 @media (min-width: 768px) {
   .restaurants ul li {
     height: 29em;
   }
 }
+
 @media (min-width: 1024px) {
   .restaurants ul li {
     height: 25em;
@@ -162,6 +196,7 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   gap: 25px;
   margin-top: 10px;
 }
+
 @media (min-width: 768px) {
   .fonctionnement ol {
     grid-template-columns: repeat(1, 1fr);
@@ -169,6 +204,7 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
     padding-right: 2.5em;
   }
 }
+
 @media (min-width: 1024px) {
   .fonctionnement ol {
     grid-template-columns: repeat(3, 1fr);
@@ -176,6 +212,7 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
     padding-right: 5em;
   }
 }
+
 .fonctionnement ol li {
   width: 95%;
   position: relative;
@@ -186,18 +223,21 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   grid-template-columns: repeat(1, 1fr);
   gap: 25px;
 }
+
 @media (min-width: 768px) {
   .main_restaurants ul {
     padding-right: 4em;
     padding-left: 4em;
   }
 }
+
 @media (min-width: 1024px) {
   .main_restaurants ul {
     padding-right: 12em;
     padding-left: 12em;
   }
 }
+
 .main_restaurants ul li {
   border: 5px;
   border-radius: 25px;
@@ -205,34 +245,44 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   position: relative;
   background-color: #ffffff;
 }
+
 .main_restaurants ul .liste {
   animation: appear 1000ms forwards;
   opacity: 0;
 }
+
 .main_restaurants ul .liste--1 {
   animation-delay: 200ms;
 }
+
 .main_restaurants ul .liste--2 {
   animation-delay: 400ms;
 }
+
 .main_restaurants ul .liste--3 {
   animation-delay: 600ms;
 }
+
 .main_restaurants ul .liste--4 {
   animation-delay: 800ms;
 }
+
 .main_restaurants ul .liste--5 {
   animation-delay: 1000ms;
 }
+
 .main_restaurants ul .liste--6 {
   animation-delay: 1200ms;
 }
+
 .main_restaurants ul .liste--7 {
   animation-delay: 1400ms;
 }
+
 .main_restaurants ul .liste--8 {
   animation-delay: 1600ms;
 }
+
 .main_restaurants ul .liste--9 {
   animation-delay: 1800ms;
 }
@@ -243,6 +293,7 @@ main h1 {
   font-family: "Shrikhand", cursive;
   margin-top: 25px;
 }
+
 main h3 {
   font-size: 24px;
 }
@@ -257,11 +308,13 @@ main h3 {
   margin-left: 40px;
   margin-top: 40px;
 }
+
 @media (min-width: 768px) {
   .fonctionnement h2 {
     margin-left: 3.3em;
   }
 }
+
 @media (min-width: 1024px) {
   .fonctionnement h2 {
     margin-left: 4.8em;
@@ -273,16 +326,19 @@ main h3 {
   margin-bottom: 25px;
   margin-left: 40px;
 }
+
 @media (min-width: 768px) {
   .restaurants h2 {
     margin-left: 3.3em;
   }
 }
+
 @media (min-width: 1024px) {
   .restaurants h2 {
     margin-left: 4.8em;
   }
 }
+
 .restaurants h3 {
   font-size: 18px;
   font-weight: 700;
@@ -302,6 +358,7 @@ main h3 {
   margin-top: 10px;
   position: relative;
 }
+
 .main_restaurants .subtitle {
   margin-top: 40px;
   margin-bottom: 15px;
@@ -310,16 +367,19 @@ main h3 {
   text-transform: uppercase;
   font-weight: 300;
 }
+
 @media (min-width: 768px) {
   .main_restaurants .subtitle {
     margin-left: 4.3em;
   }
 }
+
 @media (min-width: 1024px) {
   .main_restaurants .subtitle {
     margin-left: 12.5em;
   }
 }
+
 .main_restaurants .subtitle::after {
   content: "";
   display: block;
@@ -328,6 +388,7 @@ main h3 {
   height: 4px;
   margin-top: 5px;
 }
+
 .main_restaurants h3 {
   font-size: 18px;
   text-overflow: ellipsis;
@@ -344,6 +405,7 @@ main h3 {
     width: 200px;
   }
 }
+
 .heartdiv {
   display: flex;
   align-items: center;
@@ -356,11 +418,13 @@ main h3 {
   margin-top: 10px;
   font-size: 30px;
 }
+
 .heart .heart1 {
   display: block;
   transform: scale(1);
   transition: all 1s;
 }
+
 .heart .heart2 {
   display: block;
   position: absolute;
@@ -378,6 +442,7 @@ main h3 {
   transform: scale(0);
   opacity: 0;
 }
+
 .heart:hover .heart2 {
   transform: scale(1);
   opacity: 1;
@@ -392,17 +457,20 @@ header {
   align-items: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
+
 header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
   color: #000000;
 }
+
 header a img {
   margin-bottom: 30px;
   margin-top: 45px;
   object-fit: cover;
   width: 19em;
 }
+
 header .fa-arrow-left {
   left: 25px;
   position: absolute;
@@ -419,6 +487,7 @@ header .fa-arrow-left {
 body {
   max-width: 100%;
 }
+
 body .loader {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -431,6 +500,7 @@ body .loader {
   z-index: 1;
   animation: 1s loader 3000ms ease forwards;
 }
+
 body .loader i {
   color: #9356DC;
 }
@@ -444,6 +514,7 @@ main .sectionsearch form {
   padding: 30px;
   margin-left: 15px;
 }
+
 main .sectionsearch form input {
   font-size: 16px;
   background-color: #EAEAEA;
@@ -451,6 +522,7 @@ main .sectionsearch form input {
   text-align: center;
   font-weight: 500;
 }
+
 main .sectionsearch .reservations {
   background-color: #F7F7F7;
   height: 24em;
@@ -459,20 +531,24 @@ main .sectionsearch .reservations {
   flex-direction: column;
   align-items: center;
 }
+
 main .sectionsearch .reservations .entete {
   font-size: 18px;
   text-align: center;
   padding: 25px;
 }
+
 main .sectionsearch .reservations .btnsearch a {
   color: #F7F7F7;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
 }
+
 main .fonctionnement {
   grid-template-columns: repeat(1, 1fr);
 }
+
 main .fonctionnement ol li button span {
   font-size: 14px;
   position: absolute;
@@ -484,11 +560,13 @@ main .fonctionnement ol li button span {
   padding: 8px 13px 8px 13px;
   color: #ffffff;
 }
+
 main .fonctionnement ol li button .fa-solid {
   font-size: 25px;
   color: #7E7E7E;
   margin-right: 15px;
 }
+
 main .fonctionnement ol li button a {
   font-size: 16px;
   text-decoration: none;
@@ -496,52 +574,62 @@ main .fonctionnement ol li button a {
   font-weight: 500;
   margin-left: 15px;
 }
+
 main .restaurants {
   grid-template-columns: repeat(1, 1fr);
   padding: 0 0 4em;
   background-color: #F7F7F7;
   margin-top: 4em;
 }
+
 @media (min-width: 768px) {
   main .restaurants {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 @media (min-width: 1024px) {
   main .restaurants {
     grid-template-columns: repeat(1, 1fr);
   }
+
   main .restaurants ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-left: 35px;
   }
 }
+
 main .restaurants ul li a {
   color: #000000;
   text-decoration: none;
   position: relative;
 }
+
 main .restaurants ul li a img {
   height: 12em;
   object-fit: cover;
   border-radius: 25px 25px 0px 0px;
 }
+
 @media (min-width: 768px) {
   main .restaurants ul li a img {
     height: 22em;
   }
 }
+
 @media (min-width: 1024px) {
   main .restaurants ul li a img {
     height: 18em;
   }
 }
+
 main .restaurants ul li a p {
   font-size: 17px;
   font-weight: 300;
   margin-left: 25px;
 }
+
 main .restaurants ul li a .nouveau {
   position: absolute;
   bottom: 13em;
@@ -551,6 +639,7 @@ main .restaurants ul li a .nouveau {
   color: #008766;
   font-size: 16px;
 }
+
 @media (min-width: 768px) {
   main .restaurants ul li a .nouveau {
     bottom: 22em;
@@ -558,6 +647,7 @@ main .restaurants ul li a .nouveau {
     padding: 14px 30px;
   }
 }
+
 @media (min-width: 1024px) {
   main .restaurants ul li a .nouveau {
     bottom: 18em;
@@ -565,22 +655,26 @@ main .restaurants ul li a .nouveau {
     padding: 14px 30px;
   }
 }
+
 main .restaurants ul li a .heart {
   position: absolute;
   right: 2.5rem;
   bottom: 14px;
   font-size: 30px;
 }
+
 main .main_restaurants {
   grid-template-columns: repeat(1, 1fr);
   padding: 0 0 0;
   background-color: #F7F7F7;
 }
+
 @media (min-width: 768px) {
   main .main_restaurants {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 @media (min-width: 1024px) {
   main .main_restaurants {
     display: grid;
@@ -588,33 +682,40 @@ main .main_restaurants {
     background-color: #ffffff;
   }
 }
+
 main .main_restaurants button {
   font-size: 16px;
   color: #ffffff;
 }
+
 main .main_restaurants .main_restaurants__img {
   margin: 0 0 -5em 0;
   border-style: none;
   height: 25em;
   object-fit: cover;
 }
+
 main .main_restaurants .main_restaurants_carte {
   padding: 2em 1em 0;
   background-color: #F7F7F7;
   border-radius: 3em 3em 0 0;
 }
+
 @media (min-width: 1024px) {
   main .main_restaurants .main_restaurants_carte {
     width: 85%;
   }
 }
+
 main .main_restaurants .main_restaurants_carte h1 i {
   margin-left: 40px;
 }
+
 main .main_restaurants .main_restaurants_carte ul li {
   position: relative;
   overflow: hidden;
 }
+
 main .main_restaurants .main_restaurants_carte ul li p {
   margin-top: 12px;
   font-size: 15px;
@@ -624,11 +725,13 @@ main .main_restaurants .main_restaurants_carte ul li p {
   animation: textwidthout;
   animation-duration: 1s;
 }
+
 @media (max-width: 600px) {
   main .main_restaurants .main_restaurants_carte ul li p {
     max-width: 240px;
   }
 }
+
 main .main_restaurants .main_restaurants_carte ul li .prix {
   position: absolute;
   right: 2rem;
@@ -636,6 +739,7 @@ main .main_restaurants .main_restaurants_carte ul li .prix {
   font-weight: 700;
   transition: all 1s;
 }
+
 main .main_restaurants .main_restaurants_carte ul li span {
   position: absolute;
   top: 0;
@@ -650,10 +754,12 @@ main .main_restaurants .main_restaurants_carte ul li span {
   background: #99E2D0;
   transition: all 1s;
 }
+
 main .main_restaurants .main_restaurants_carte ul li span .fa-check-circle {
   transform: rotate(-240deg);
   transition: all 1.5s;
 }
+
 @media (max-width: 600px) {
   main .main_restaurants .main_restaurants_carte ul li:hover p {
     animation: textwidth;
@@ -661,12 +767,15 @@ main .main_restaurants .main_restaurants_carte ul li span .fa-check-circle {
     width: 200px;
   }
 }
+
 main .main_restaurants .main_restaurants_carte ul li:hover .prix {
   right: 6.5rem;
 }
+
 main .main_restaurants .main_restaurants_carte ul li:hover span {
   right: 0;
 }
+
 main .main_restaurants .main_restaurants_carte ul li:hover span i {
   transform: rotate(0deg);
 }
@@ -675,9 +784,11 @@ footer {
   background-color: #353535;
   height: 15em;
 }
+
 footer section {
   margin-left: 15px;
 }
+
 footer h2 {
   font-family: "Shrikhand";
   font-size: 18px;
@@ -685,37 +796,45 @@ footer h2 {
   font-weight: 400;
   padding: 25px;
 }
+
 footer ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
 }
+
 footer li {
   padding: 10px;
   margin-left: 25px;
 }
+
 footer a {
   font-size: 16px;
   color: #ffffff;
   text-decoration: none;
   font-weight: 400;
 }
+
 footer .fa-solid {
   font-size: 15px;
   color: #ffffff;
   margin-right: 15px;
 }
+
 @media (min-width: 1024px) {
   footer {
     height: 8em;
   }
+
   footer section {
     display: flex;
     flex-direction: row-reverse;
   }
+
   footer h2 {
     margin-top: 44px;
   }
+
   footer ul {
     display: flex;
     flex-direction: row;
