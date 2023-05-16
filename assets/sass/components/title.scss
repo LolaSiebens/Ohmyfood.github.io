@@ -22,7 +22,7 @@ main {
 
 .fonctionnement {
 
-    h3 {
+    h2 {
         @media (min-width: $layout-breakpoint-tab) {
             margin-left: 3.3em;
         }
@@ -37,7 +37,7 @@ main {
 }
 
 .restaurants {
-    h3 {
+    h2 {
         @media (min-width: $layout-breakpoint-tab) {
             margin-left: 3.3em;
         }
@@ -51,7 +51,7 @@ main {
         margin-left: 40px;
     }
 
-    h4 {
+    h3 {
         font-size: 18px;
         @include weight(700);
         margin-left: 25px;
@@ -61,7 +61,7 @@ main {
 }
 
 .main_restaurants {
-    h1 {
+    .title {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -73,7 +73,7 @@ main {
         position: relative;
     }
 
-    h2 {
+    .subtitle {
         @media (min-width: $layout-breakpoint-tab) {
             margin-left: 4.3em;
         }
@@ -81,8 +81,6 @@ main {
         @media (min-width: $layout-breakpoint-desk) {
             margin-left: 12.5em;
         }
-
-
 
         margin-top: 40px;
         margin-bottom: 15px;
@@ -103,7 +101,7 @@ main {
         }
     }
 
-    h4 {
+    h3 {
         font-size: 18px;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -115,7 +113,7 @@ main {
 
 @media (max-width: 600px) {
     li:hover {
-        & h4 {
+        & h3 {
             animation: textwidth;
             animation-duration: 1s;
             width: 200px;

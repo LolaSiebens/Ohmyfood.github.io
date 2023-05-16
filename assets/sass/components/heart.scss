@@ -1,4 +1,15 @@
+.heartdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .heart {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+
     & .heart1 {
         display: block;
         transform: scale(1);
