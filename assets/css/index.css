@@ -59,6 +59,8 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   border-radius: 50px;
   padding: 25px 40px 25px 40px;
   margin-top: 25px;
+  color: white;
+  font-size: 17px;
 }
 
 .sectionsearch button:hover {
@@ -74,15 +76,20 @@ main .main_restaurants .main_restaurants__img, main .restaurants ul li a img, ma
   background-color: #F7F7F7;
 }
 
+.fonctionnement button {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+}
+.fonctionnement button:hover {
+  font-size: 18px;
+}
 .fonctionnement button:hover i {
   transform: scale(1.1);
 }
 .fonctionnement button:hover .fa-solid {
   font-size: 25px;
   color: #9356DC;
-}
-.fonctionnement button:hover span {
-  font-size: 17px;
 }
 
 .main_restaurants button {
@@ -246,37 +253,37 @@ main h3 {
   text-align: center;
 }
 
-.fonctionnement h3 {
+.fonctionnement h2 {
   margin-left: 40px;
   margin-top: 40px;
 }
 @media (min-width: 768px) {
-  .fonctionnement h3 {
+  .fonctionnement h2 {
     margin-left: 3.3em;
   }
 }
 @media (min-width: 1024px) {
-  .fonctionnement h3 {
+  .fonctionnement h2 {
     margin-left: 4.8em;
   }
 }
 
-.restaurants h3 {
+.restaurants h2 {
   margin-top: 40px;
   margin-bottom: 25px;
   margin-left: 40px;
 }
 @media (min-width: 768px) {
-  .restaurants h3 {
+  .restaurants h2 {
     margin-left: 3.3em;
   }
 }
 @media (min-width: 1024px) {
-  .restaurants h3 {
+  .restaurants h2 {
     margin-left: 4.8em;
   }
 }
-.restaurants h4 {
+.restaurants h3 {
   font-size: 18px;
   font-weight: 700;
   margin-left: 25px;
@@ -284,7 +291,7 @@ main h3 {
   margin-bottom: 10px;
 }
 
-.main_restaurants h1 {
+.main_restaurants .title {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -295,7 +302,7 @@ main h3 {
   margin-top: 10px;
   position: relative;
 }
-.main_restaurants h2 {
+.main_restaurants .subtitle {
   margin-top: 40px;
   margin-bottom: 15px;
   margin-left: 5px;
@@ -304,16 +311,16 @@ main h3 {
   font-weight: 300;
 }
 @media (min-width: 768px) {
-  .main_restaurants h2 {
+  .main_restaurants .subtitle {
     margin-left: 4.3em;
   }
 }
 @media (min-width: 1024px) {
-  .main_restaurants h2 {
+  .main_restaurants .subtitle {
     margin-left: 12.5em;
   }
 }
-.main_restaurants h2::after {
+.main_restaurants .subtitle::after {
   content: "";
   display: block;
   background-color: #99E2D0;
@@ -321,7 +328,7 @@ main h3 {
   height: 4px;
   margin-top: 5px;
 }
-.main_restaurants h4 {
+.main_restaurants h3 {
   font-size: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -331,11 +338,23 @@ main h3 {
 }
 
 @media (max-width: 600px) {
-  li:hover h4 {
+  li:hover h3 {
     animation: textwidth;
     animation-duration: 1s;
     width: 200px;
   }
+}
+.heartdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 30px;
 }
 .heart .heart1 {
   display: block;
@@ -423,6 +442,7 @@ main .sectionsearch form {
   align-items: center;
   background-color: #EAEAEA;
   padding: 30px;
+  margin-left: 15px;
 }
 main .sectionsearch form input {
   font-size: 16px;
@@ -453,7 +473,7 @@ main .sectionsearch .reservations .btnsearch a {
 main .fonctionnement {
   grid-template-columns: repeat(1, 1fr);
 }
-main .fonctionnement ol li button p {
+main .fonctionnement ol li button span {
   font-size: 14px;
   position: absolute;
   left: -19px;
@@ -467,6 +487,7 @@ main .fonctionnement ol li button p {
 main .fonctionnement ol li button .fa-solid {
   font-size: 25px;
   color: #7E7E7E;
+  margin-right: 15px;
 }
 main .fonctionnement ol li button a {
   font-size: 16px;
@@ -567,7 +588,7 @@ main .main_restaurants {
     background-color: #ffffff;
   }
 }
-main .main_restaurants button a {
+main .main_restaurants button {
   font-size: 16px;
   color: #ffffff;
 }
@@ -657,7 +678,7 @@ footer {
 footer section {
   margin-left: 15px;
 }
-footer h5 {
+footer h2 {
   font-family: "Shrikhand";
   font-size: 18px;
   color: #ffffff;
@@ -692,7 +713,7 @@ footer .fa-solid {
     display: flex;
     flex-direction: row-reverse;
   }
-  footer h5 {
+  footer h2 {
     margin-top: 44px;
   }
   footer ul {
